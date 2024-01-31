@@ -17,6 +17,9 @@ module.exports = {
       '3xl': '1920px',
     },
     extend: {
+      fontFamily: {
+        thicccboi: ['thicccboi', 'sans-serif'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

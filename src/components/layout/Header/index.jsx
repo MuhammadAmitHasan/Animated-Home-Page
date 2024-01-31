@@ -9,52 +9,16 @@ import { FaApple } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoIosArrowDown, IoIosArrowUp, IoMdClose } from 'react-icons/io';
 import GroupLinks from './GroupLinks';
+import MobileMenu from './MobileMenu';
+import { megaMenu } from './frammerAnimation';
 
 const Header = () => {
   const [pageOpen, setPageOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const megaMenu = {
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        x: { velocity: 100 },
-        duration: 0.3,
-      },
-    },
-    hidden: {
-      x: -250,
-      opacity: 0,
-      transition: {
-        x: { velocity: 100 },
-        duration: 0.3,
-      },
-    },
-  };
-
-  const navContainer = {
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        y: { velocity: 100 },
-        duration: 0.3,
-      },
-    },
-    hidden: {
-      y: -250,
-      opacity: 0,
-      transition: {
-        y: { velocity: 100 },
-        duration: 0.3,
-      },
-    },
-  };
-
   return (
     <div>
-      <div className="bg-neutral px-5 py-2 flex justify-between xl:grid grid-cols-5 items-center text-neutral-text relative z-50">
+      <div className="bg-neutral px-5 py-2 flex justify-between xl:grid grid-cols-5 items-center text-neutral-text relative z-50 max-w-[1400px] mx-auto pt-5">
         <Link href={'/'}>
           <Image
             width={150}
@@ -130,45 +94,11 @@ const Header = () => {
       </div>
 
       {/* mobile menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            className="bg-white grid grid-cols-1 gap-2 px-5 py-3 lg:hidden text-neutral-text absolute w-full z-40"
-            initial="hidden"
-            animate={menuOpen ? 'visible' : 'hidden'}
-            exit="hidden"
-            variants={navContainer}
-          >
-            <GroupLinks />
-            <div onClick={() => setPageOpen(!pageOpen)}>
-              <div className="flex items-center space-x-0.5 hover:text-hover-color">
-                <span>Pages</span>
-                {pageOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
-              </div>
-
-              {/* mega menu */}
-              <AnimatePresence>
-                {pageOpen && (
-                  <motion.div
-                    className="mt-5"
-                    initial="hidden"
-                    animate={pageOpen ? 'visible' : 'hidden'}
-                    exit="hidden"
-                    variants={megaMenu}
-                  >
-                    <LinkComponents />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-              <Button className={'!w-full mt-5 sm:hidden'}>
-                <FaApple />
-                <span>Download for iOS</span>
-              </Button>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <MobileMenu
+        pageOpen={pageOpen}
+        menuOpen={menuOpen}
+        setPageOpen={setPageOpen}
+      />
     </div>
   );
 };

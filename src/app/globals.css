@@ -1,21 +1,44 @@
+@font-face {
+  font-family: 'thicccboi';
+  src: url('../fonts/THICCCBOI-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'thicccboi';
+  src: url('../fonts/THICCCBOI-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'thicccboi';
+  src: url('../fonts/THICCCBOI-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'thicccboi';
+  src: url('../fonts/THICCCBOI-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'thicccboi';
+  src: url('../fonts/THICCCBOI-ExtraBold.ttf');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   @apply bg-neutral;
+  @apply font-thicccboi;
 }
