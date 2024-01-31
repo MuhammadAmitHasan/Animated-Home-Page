@@ -108,7 +108,7 @@ const Header = () => {
           </Link>
 
           <div className="sm:block hidden">
-            <Button className={''}>
+            <Button>
               <FaApple />
               <span>Download for iOS</span>
             </Button>
@@ -133,7 +133,7 @@ const Header = () => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="bg-white grid grid-cols-1 gap-2 pl-5 py-3 lg:hidden text-neutral-text absolute w-full z-40"
+            className="bg-white grid grid-cols-1 gap-2 px-5 py-3 lg:hidden text-neutral-text absolute w-full z-40"
             initial="hidden"
             animate={menuOpen ? 'visible' : 'hidden'}
             exit="hidden"
@@ -160,6 +160,11 @@ const Header = () => {
                   </motion.div>
                 )}
               </AnimatePresence>
+
+              <Button className={'!w-full mt-5 sm:hidden'}>
+                <FaApple />
+                <span>Download for iOS</span>
+              </Button>
             </div>
           </motion.div>
         )}
