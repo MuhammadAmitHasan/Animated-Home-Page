@@ -47,13 +47,15 @@ body {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-gradient-color-1 via-gradient-color-2 to-gradient-color-3;
 }
 
-.gradient-bg-1{
-  background-image: url('/images/w4.png'), linear-gradient(135deg, #6ac9ff 4%, #819dff 51%, #a55dff 98%);
+.gradient-bg-1 {
+  background-image: url('/images/w4.png'),
+    linear-gradient(135deg, #6ac9ff 4%, #819dff 51%, #a55dff 98%);
   background-position: 50% 0, 0 0;
   background-size: cover, auto;
 }
-.gradient-bg-2{
-  background-image: url('/images/w4.png'), linear-gradient(135deg, #ffba6a 4%, #ffba6a 4%, #ff69de 98%);
+.gradient-bg-2 {
+  background-image: url('/images/w4.png'),
+    linear-gradient(135deg, #ffba6a 4%, #ffba6a 4%, #ff69de 98%);
   background-position: 50% 0, 0 0;
   background-size: cover, auto;
 }
