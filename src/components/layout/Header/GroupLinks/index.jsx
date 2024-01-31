@@ -3,7 +3,7 @@ import Link from 'next/link';
 const GroupLinks = () => {
   return (
     <>
-      <Link className="hover:text-hover-color" href={'/'}>
+      <Link className="hover:text-hover-color" href={'/home'}>
         Home
       </Link>
       <Link className="hover:text-hover-color" href={'/'}>

@@ -1,6 +1,5 @@
 'use client';
-import LinkComponents from '@/components/reuseable/LinkComponent';
-import Button from '@/components/ui/Button';
+import LinkComponents from '@/components/ui/LinkComponent';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,6 +10,7 @@ import { IoIosArrowDown, IoIosArrowUp, IoMdClose } from 'react-icons/io';
 import GroupLinks from './GroupLinks';
 import MobileMenu from './MobileMenu';
 import { megaMenu } from './frammerAnimation';
+import Button from '@/components/ui/Button';
 
 const Header = () => {
   const [pageOpen, setPageOpen] = useState(false);
@@ -72,7 +72,7 @@ const Header = () => {
           </Link>
 
           <div className="sm:block hidden">
-            <Button>
+            <Button className={'text-sm'}>
               <FaApple />
               <span>Download for iOS</span>
             </Button>
