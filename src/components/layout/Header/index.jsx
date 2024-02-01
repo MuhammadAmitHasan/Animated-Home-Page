@@ -1,4 +1,5 @@
 'use client';
+import Button from '@/components/ui/Button';
 import LinkComponents from '@/components/ui/LinkComponent';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
@@ -10,7 +11,6 @@ import { IoIosArrowDown, IoIosArrowUp, IoMdClose } from 'react-icons/io';
 import GroupLinks from './GroupLinks';
 import MobileMenu from './MobileMenu';
 import { megaMenu } from './frammerAnimation';
-import Button from '@/components/ui/Button';
 
 const Header = () => {
   const [pageOpen, setPageOpen] = useState(false);
@@ -51,7 +51,7 @@ const Header = () => {
                   variants={megaMenu}
                 >
                   <div
-                    className="rounded-3xl shadow-lg p-8 pt-5 mx-auto max-w-[750px] mt-3"
+                    className="rounded-3xl shadow-lg p-8 pt-5 mx-auto max-w-[750px] mt-3 bg-white"
                     onMouseLeave={() => setPageOpen(false)}
                   >
                     <LinkComponents />

@@ -1,5 +1,7 @@
+import Button from '@/components/ui/Button';
 import HeadingText from '@/components/ui/HeadingText';
 import Image from 'next/image';
+import { FaApple } from 'react-icons/fa';
 
 const WhyTechBot = () => {
   return (
@@ -82,6 +84,12 @@ const WhyTechBot = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center mt-5">
+        <Button className={'py-4 w-full sm:w-64'}>
+          <FaApple />
+          <span>Download for iOS</span>
+        </Button>
       </div>
     </div>
   );
