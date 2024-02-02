@@ -24,7 +24,7 @@ const LearnHowItWorks = () => {
         {LearnHowItWorksDemoData.map((lhw, i) => (
           <div
             key={i}
-            className=" bg-white rounded-3xl px-4 pt-8 md:px-14 md:pt-12 "
+            className=" bg-white rounded-3xl px-4 pt-8 md:px-14 md:pt-12 shadow-lg"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 max-w-[1300px] mx-auto gap-10 2xl:pl-10">
               <div className="flex items-center">

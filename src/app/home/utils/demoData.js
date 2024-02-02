@@ -34,5 +34,40 @@ const DesignToFitDemoData = [
     },
 ]
 
-export { DesignToFitDemoData, LearnHowItWorksDemoData }
+const slideDataDemo = [
+    {
+        description: '“When it comes to AI, TechBot stands in a league of its own. Its responses are astonishingly <span class="gradient-color">human-like</span>.”',
+        name: 'Sophie Moore',
+        occupation: 'Student at Institute',
+        image: '/images/face (1).jpg'
+    },
+    {
+        description: '“TechBot has brought a new <span class="gradient-color">dimension to learning</span> – it effortlessly unlocks the doors to knowledge”',
+        name: 'John Carter',
+        occupation: 'SEO director at Company',
+        image: '/images/face (2).jpg'
+    },
+    {
+        description: '"TechBot has transformed my research game entirely. It has become an indispensable <span class="gradient-color">time-saving gem</span>c',
+        name: 'Alex Miler',
+        occupation: 'AI researcher at Business',
+        image: '/images/face (3).jpg'
+    },
+]
+
+const readData = [
+    {
+        image: '/images/read (1).jpg',
+        date: 'Nov 8, 2023',
+        heading: 'Simplify ML workflow using GPT\'s automation feature',
+        link: '/'
+    },
+    {
+        image: '/images/read (2).jpg',
+        date: 'Nov 8, 2023',
+        heading: 'Expanding language-model capabilities beyond English',
+        link: '/'
+    },
+]
+export { DesignToFitDemoData, LearnHowItWorksDemoData, readData, slideDataDemo }
 

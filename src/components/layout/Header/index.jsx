@@ -19,7 +19,10 @@ const Header = () => {
   return (
     <div>
       <div className="bg-neutral px-5 py-2 flex justify-between xl:grid grid-cols-5 items-center text-neutral-text relative z-50 max-w-[1400px] mx-auto pt-5">
-        <Link href={'/'}>
+        <Link
+          className="hover:transform hover:translate-y-[-3px] transition-transform duration-200"
+          href={'/'}
+        >
           <Image
             width={150}
             height={40}

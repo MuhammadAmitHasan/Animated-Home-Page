@@ -59,3 +59,19 @@ body {
   background-position: 50% 0, 0 0;
   background-size: cover, auto;
 }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-95%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide {
+  animation: slide 60s linear infinite;
+}

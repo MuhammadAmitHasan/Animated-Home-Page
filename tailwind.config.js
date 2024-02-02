@@ -29,6 +29,7 @@ module.exports = {
         'hover-color': '#0082f3',
         'neutral': '#f8f8f8',
         'neutral-text': '#606062',
+        'neutral-lite': '#f8f8f8',
         'gradient-color-1': '#ffb774',
         'gradient-color-2': '#f68dff',
         'gradient-color-3': '#7087ff',
