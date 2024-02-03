@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
       <Hero />
-      <div className="max-w-[1424px] mx-auto">
+      <div className="max-w-[1424px] mx-auto space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
         <WhyTechBot />
         <LearnHowItWorks />
         <DesignToFit />
