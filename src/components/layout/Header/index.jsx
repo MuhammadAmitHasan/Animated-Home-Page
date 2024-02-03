@@ -8,9 +8,9 @@ import { useState } from 'react';
 import { FaApple } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoIosArrowDown, IoIosArrowUp, IoMdClose } from 'react-icons/io';
+import { megaMenu } from '../../../utils/frammerAnimation';
 import GroupLinks from './GroupLinks';
 import MobileMenu from './MobileMenu';
-import { megaMenu } from './frammerAnimation';
 
 const Header = () => {
   const [pageOpen, setPageOpen] = useState(false);

@@ -1,3 +1,5 @@
+import { fadeInLeft } from '@/utils/frammerAnimation';
+import AnimatedComponent from '../ui/AnimatedComponent';
 import DesignToFit from './DesignToFit';
 import FeatureSlide from './FeatureSlide';
 import Hero from './Hero';
@@ -8,8 +10,10 @@ import WhyTechBot from './WhyTechBot';
 
 const HomeComponent = () => {
   return (
-    <div className="space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
-      <Hero />
+    <div className="space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44 overflow-hidden">
+      <AnimatedComponent variants={fadeInLeft}>
+        <Hero />
+      </AnimatedComponent>
       <div className="max-w-[1424px] mx-auto space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
         <WhyTechBot />
         <LearnHowItWorks />
@@ -21,4 +25,5 @@ const HomeComponent = () => {
     </div>
   );
 };
+
 export default HomeComponent;

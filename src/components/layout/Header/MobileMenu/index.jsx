@@ -3,8 +3,8 @@ import LinkComponents from '@/components/ui/LinkComponent';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaApple } from 'react-icons/fa';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { megaMenu, navContainer } from '../../../../utils/frammerAnimation';
 import GroupLinks from '../GroupLinks';
-import { megaMenu, navContainer } from '../frammerAnimation';
 
 const MobileMenu = ({ pageOpen, menuOpen, setPageOpen }) => {
   return (
