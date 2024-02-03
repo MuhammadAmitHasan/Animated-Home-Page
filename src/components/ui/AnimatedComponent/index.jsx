@@ -3,7 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const AnimatedComponent = ({ children, variants }) => {
+const AnimatedComponent = ({ children, variants, className }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -21,6 +21,7 @@ const AnimatedComponent = ({ children, variants }) => {
       animate={controls}
       variants={variants}
       initial="hidden"
+      className={className}
     >
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         {children}

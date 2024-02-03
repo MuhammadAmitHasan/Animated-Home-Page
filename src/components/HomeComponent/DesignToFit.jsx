@@ -1,20 +1,24 @@
 import Button from '@/components/ui/Button';
 import HeadingText from '@/components/ui/HeadingText';
+import { fadeInRight } from '@/utils/framerAnimation';
 import Image from 'next/image';
 import { FaApple } from 'react-icons/fa';
+import AnimatedComponent from '../ui/AnimatedComponent';
 import { DesignToFitDemoData } from './utils/demoData';
 
 const DesignToFit = () => {
   return (
     <div className="container px-3 mx-auto">
-      <HeadingText
-        text={
-          <>
-            Designed to <br />
-            fit every <span className="gradient-color">use case</span>
-          </>
-        }
-      />
+      <AnimatedComponent variants={fadeInRight}>
+        <HeadingText
+          text={
+            <>
+              Designed to <br />
+              fit every <span className="gradient-color">use case</span>
+            </>
+          }
+        />
+      </AnimatedComponent>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
         {DesignToFitDemoData.map((dtf, i) => (
@@ -24,7 +28,8 @@ const DesignToFit = () => {
               i == 2 ? 'md:col-span-2 grid grid-cols-1 md:grid-cols-2' : 'pt-10'
             }`}
           >
-            <div
+            <AnimatedComponent
+              variants={fadeInRight}
               className={`px-5 sm:px-12 relative ${
                 i == 2 ? 'pt-10 md:min-h-96' : ''
               }`}
@@ -43,47 +48,49 @@ const DesignToFit = () => {
                   </Button>
                 </div>
               )}
-            </div>
+            </AnimatedComponent>
 
-            <div className="px-12 relative overflow-hidden">
-              {i == 2 ? (
-                <div className="absolute md:bottom-0 left-0">
-                  <div className="relative h-96 md:h-[1000px] aspect-square">
-                    <Image
-                      loading="lazy"
-                      alt="bg"
-                      src={'/images/imgrbr2.png'}
-                      fill
-                      className="object-cover"
-                      sizes="100%"
-                    />
+            <AnimatedComponent variants={fadeInRight}>
+              <div className="px-12 relative overflow-hidden">
+                {i == 2 ? (
+                  <div className="absolute md:bottom-0 left-0">
+                    <div className="relative h-96 md:h-[1000px] aspect-square">
+                      <Image
+                        loading="lazy"
+                        alt="bg"
+                        src={'/images/imgrbr2.png'}
+                        fill
+                        className="object-cover"
+                        sizes="100%"
+                      />
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <Image
-                  loading="lazy"
-                  alt="bg"
-                  src={'/images/imgrbg.png'}
-                  fill
-                  className="object-cover"
-                  sizes="100%"
-                />
-              )}
+                ) : (
+                  <Image
+                    loading="lazy"
+                    alt="bg"
+                    src={'/images/imgrbg.png'}
+                    fill
+                    className="object-cover"
+                    sizes="100%"
+                  />
+                )}
 
-              <div
-                className={`relative w-full  ${
-                  i == 2 ? 'aspect-[7/8]' : 'aspect-[5/4]'
-                }`}
-              >
-                <Image
-                  loading="lazy"
-                  src={dtf.image}
-                  alt="mobile text"
-                  fill
-                  sizes="100%"
-                />
+                <div
+                  className={`relative w-full  ${
+                    i == 2 ? 'aspect-[7/8]' : 'aspect-[5/4]'
+                  }`}
+                >
+                  <Image
+                    loading="lazy"
+                    src={dtf.image}
+                    alt="mobile text"
+                    fill
+                    sizes="100%"
+                  />
+                </div>
               </div>
-            </div>
+            </AnimatedComponent>
           </div>
         ))}
       </div>
