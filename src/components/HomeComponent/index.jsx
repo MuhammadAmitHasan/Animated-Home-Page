@@ -1,4 +1,4 @@
-import { fadeInLeft } from '@/utils/frammerAnimation';
+import { fadeInLeft } from '@/utils/framerAnimation';
 import AnimatedComponent from '../ui/AnimatedComponent';
 import DesignToFit from './DesignToFit';
 import FeatureSlide from './FeatureSlide';

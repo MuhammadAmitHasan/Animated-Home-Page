@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { FaApple } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoIosArrowDown, IoIosArrowUp, IoMdClose } from 'react-icons/io';
-import { megaMenu } from '../../../utils/frammerAnimation';
+import { megaMenu } from '../../../utils/framerAnimation';
 import GroupLinks from './GroupLinks';
 import MobileMenu from './MobileMenu';
 
