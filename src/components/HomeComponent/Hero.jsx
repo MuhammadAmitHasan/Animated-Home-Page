@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
 const Hero = () => {
@@ -5,7 +6,13 @@ const Hero = () => {
     <div className="mt-14">
       <div className="flex justify-center mb-5">
         <div className="h-16 md:h-20 lg:h-24 text-center aspect-square relative">
-          <Image loading="lazy" src={'/images/hero/herol.png'} alt="logo" fill sizes="100%" />
+          <Image
+            loading="lazy"
+            src={'/images/hero/herol.png'}
+            alt="logo"
+            fill
+            sizes="100%"
+          />
         </div>
       </div>
       <h1 className="text-center font-semibold text-4xl sm:text-5xl md:text-7xl lg:text-[90px] !lg:leading-[95px]">

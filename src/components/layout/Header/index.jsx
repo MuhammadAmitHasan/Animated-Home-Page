@@ -29,6 +29,7 @@ const Header = () => {
             fill
             src={'/images/logo.png'}
             alt="logo"
+            sizes="100%"
           ></Image>
         </Link>
 

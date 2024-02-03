@@ -6,7 +6,7 @@ import Read from './Read';
 import StartMaking from './StartMaking';
 import WhyTechBot from './WhyTechBot';
 
-const Home = () => {
+const HomeComponent = () => {
   return (
     <div className="space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
       <Hero />
@@ -21,5 +21,4 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
+export default HomeComponent;
