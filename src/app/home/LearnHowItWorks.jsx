@@ -47,7 +47,13 @@ const LearnHowItWorks = () => {
               </div>
               <div className="flex justify-center items-end">
                 <div className="relative h-72 sm:h-96 lg:h-[500px] xl:h-[600px] aspect-[2/3]">
-                  <Image src={lhw.image} fill sizes="100%" alt="mobile app" />
+                  <Image
+                    loading="lazy"
+                    src={lhw.image}
+                    fill
+                    sizes="100%"
+                    alt="mobile app"
+                  />
                 </div>
               </div>
             </div>

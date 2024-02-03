@@ -7,7 +7,7 @@ import { FaApple } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className="mt-28 sm:mt-36 md:mt-40 lg:mt-44 rounded-t-3xl py-10 px-3 bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 container mx-auto ">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 container max-w-[1424px] mx-auto">
         <div className="lg:col-span-2">
           <div className="rounded-3xl w-full px-8 py-10 text-white space-y-5 bg-black font-semibold">
             <Link
@@ -15,6 +15,7 @@ const Footer = () => {
               className="relative block w-[172px] h-[37px] md:w-[200px] md:h-[40px] hover:transform hover:translate-y-[-3px] transition-transform duration-200"
             >
               <Image
+                loading="lazy"
                 src={'/images/logoW.png'}
                 alt="logo white version"
                 fill

@@ -34,6 +34,7 @@ const StartMaking = () => {
           <div className="absolute top-10 xl:-top-40 lg:-top-32 flex justify-center w-full">
             <div className="relative mx-auto w-64 sm:w-96 lg:w-[680px] aspect-[2/3.2]">
               <Image
+                loading="lazy"
                 src={'/images/2m.png'}
                 fill
                 alt="2 mobile devices"

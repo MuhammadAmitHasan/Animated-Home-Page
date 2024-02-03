@@ -50,19 +50,23 @@ const DesignToFit = () => {
                 <div className="absolute md:bottom-0 left-0">
                   <div className="relative h-96 md:h-[1000px] aspect-square">
                     <Image
+                      loading="lazy"
                       alt="bg"
                       src={'/images/imgrbr2.png'}
                       fill
                       className="object-cover"
+                      sizes="100%"
                     />
                   </div>
                 </div>
               ) : (
                 <Image
+                  loading="lazy"
                   alt="bg"
                   src={'/images/imgrbg.png'}
                   fill
                   className="object-cover"
+                  sizes="100%"
                 />
               )}
 
@@ -71,7 +75,13 @@ const DesignToFit = () => {
                   i == 2 ? 'aspect-[7/8]' : 'aspect-[5/4]'
                 }`}
               >
-                <Image src={dtf.image} alt="mobile text" fill />
+                <Image
+                  loading="lazy"
+                  src={dtf.image}
+                  alt="mobile text"
+                  fill
+                  sizes="100%"
+                />
               </div>
             </div>
           </div>

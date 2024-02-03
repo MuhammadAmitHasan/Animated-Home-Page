@@ -11,12 +11,14 @@ export default function Home() {
   return (
     <main className="space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
       <Hero />
-      <WhyTechBot />
-      <LearnHowItWorks />
-      <DesignToFit />
-      <FeatureSlide />
-      <StartMaking />
-      <Read />
+      <div className="max-w-[1424px] mx-auto">
+        <WhyTechBot />
+        <LearnHowItWorks />
+        <DesignToFit />
+        <FeatureSlide />
+        <StartMaking />
+        <Read />
+      </div>
     </main>
   )
 }

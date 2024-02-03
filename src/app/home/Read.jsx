@@ -19,6 +19,7 @@ const Read = () => {
           <Link href={'/'} key={i} className="overflow-hidden group">
             <div className="relative w-full aspect-[5/4] rounded-3xl border border-gray-200 overflow-hidden">
               <Image
+                loading="lazy"
                 className="object-cover rounded-3xl group-hover:scale-110 transition-transform"
                 fill
                 sizes="100%"

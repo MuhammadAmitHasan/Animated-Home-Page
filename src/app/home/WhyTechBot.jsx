@@ -18,7 +18,7 @@ const WhyTechBot = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-4">
         <div className="row-span-2 px-5 md:px-10 py-10 md:py-14 bg-white rounded-3xl shadow-lg">
           <div className="relative aspect-[2/3]">
-            <Image src={'/images/w3.png'} fill sizes="100%" alt="mobile" />
+            <Image loading="lazy" src={'/images/w3.png'} fill sizes="100%" alt="mobile" />
             <div className="h-[30%] absolute top-auto bottom-[0%] left-[0%] right-[0%] bg-gradient-to-b from-transparent to-white via-transparent"></div>
           </div>
           <div className="text-center mt-4">
@@ -42,6 +42,7 @@ const WhyTechBot = () => {
           </p>
           <div className="w-full relative h-24 xs:h-36 sm:h-48 md:h-36 xl:h-48 mt-5">
             <Image
+              loading="lazy"
               src={'/images/w2.svg'}
               className="object-cover"
               fill
@@ -68,6 +69,7 @@ const WhyTechBot = () => {
         <div className="py-10 text-center shadow-lg bg-white rounded-3xl px-5 md:px-10">
           <div className="relative w-full aspect-[2/1.2]">
             <Image
+              loading="lazy"
               fill
               sizes="100%"
               src={'/images/w1.png'}

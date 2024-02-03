@@ -17,6 +17,7 @@ const FeatureSlide = () => {
             >
               <div className="relative h-24 lg:h-36 aspect-square rounded-full mx-auto">
                 <Image
+                  loading="lazy"
                   alt="face"
                   src={sdd.image}
                   fill
