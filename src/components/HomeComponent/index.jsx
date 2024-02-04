@@ -8,11 +8,15 @@ import WhyTechBot from './WhyTechBot';
 
 const HomeComponent = () => {
   return (
-    <div className="space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44 overflow-hidden">
-      <Hero />
-      <div className="max-w-[1424px] mx-auto space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
+    <div className="space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
+      <div className="overflow-hidden space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
+        <Hero />
         <WhyTechBot />
-        <LearnHowItWorks />
+      </div>
+
+      <LearnHowItWorks />
+
+      <div className="overflow-hidden space-y-28 sm:space-y-36 md:space-y-40 lg:space-y-44">
         <DesignToFit />
         <FeatureSlide />
         <StartMaking />

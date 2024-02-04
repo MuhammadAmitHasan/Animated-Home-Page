@@ -8,7 +8,7 @@ import { DesignToFitDemoData } from './utils/demoData';
 
 const DesignToFit = () => {
   return (
-    <div className="container px-3 mx-auto">
+    <div className="container px-3 mx-auto max-w-[1424px]">
       <AnimatedComponent variants={fadeInRight}>
         <HeadingText
           text={

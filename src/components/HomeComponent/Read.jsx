@@ -7,7 +7,7 @@ import { readData } from './utils/demoData';
 
 const Read = () => {
   return (
-    <div className="container mx-auto px-3 pt-10 sm:pt-32">
+    <div className="container mx-auto px-3 pt-10 sm:pt-32 max-w-[1424px]">
       <AnimatedComponent variants={fadeInUp}>
         <HeadingText
           text={

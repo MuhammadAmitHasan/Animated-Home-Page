@@ -7,8 +7,8 @@ import { slideDataDemo } from './utils/demoData';
 const FeatureSlide = () => {
   return (
     <AnimatedComponent variants={fadeInUp}>
-      <div className="px-4 lg:px-10">
-        <div className="relative overflow-hidden ">
+      <div className="px-4 lg:px-10 max-w-[1424px] mx-auto">
+        <div className="relative overflow-hidden">
           <div className="w-10 lg:w-28 absolute top-0 bottom-0 left-0 bg-gradient-to-r from-neutral-lite via-white to-transparent z-10"></div>
           <div className="w-10 lg:w-28 absolute top-0 bottom-0 right-0 bg-gradient-to-l from-neutral-lite via-white to-transparent z-10"></div>
 

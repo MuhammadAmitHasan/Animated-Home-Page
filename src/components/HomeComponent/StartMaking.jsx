@@ -7,8 +7,8 @@ import AnimatedComponent from '../ui/AnimatedComponent';
 
 const StartMaking = () => {
   return (
-    <div className="lg:pt-32">
-      <div className="container mx-auto rounded-3xl bg-[#111111] grid grid-cols-1 lg:grid-cols-2 text-white px-10 pt-10 lg:pt-0">
+    <div className="lg:pt-32 px-3">
+      <div className="container mx-auto max-w-[1424px] rounded-3xl bg-[#111111] grid grid-cols-1 lg:grid-cols-2 text-white px-10 pt-10 lg:pt-0 ">
         <div className="flex items-center">
           <AnimatedComponent variants={fadeInRight}>
             <div className="space-y-6">

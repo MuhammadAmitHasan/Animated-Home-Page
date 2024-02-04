@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="mt-14">
       <AnimatedComponent variants={fadeInUp}>
-        <div className="flex justify-center mb-5">
+        <div className="flex justify-center mb-5 px-3">
           <div className="h-16 md:h-20 lg:h-24 text-center aspect-square relative">
             <Image
               loading="lazy"
