@@ -17,7 +17,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div>
+    <div className="font-medium">
       <div className="bg-neutral px-5 py-2 flex justify-between xl:grid grid-cols-5 items-center text-neutral-text relative z-50 max-w-[1400px] mx-auto pt-5">
         <Link
           className="w-[150px] h-[50px] hover:transform hover:translate-y-[-3px] transition-transform duration-200 relative"
