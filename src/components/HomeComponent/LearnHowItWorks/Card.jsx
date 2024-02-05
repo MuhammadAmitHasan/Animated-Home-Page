@@ -1,5 +1,3 @@
-//
-
 'use client';
 import Button from '@/components/ui/Button';
 import HeadingText from '@/components/ui/HeadingText';
@@ -13,6 +11,7 @@ const Card = ({ progress, range, targetScale, i, lhw }) => {
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ['start end', 'start start'],
+    layoutEffect: false,
   });
 
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
@@ -24,7 +23,7 @@ const Card = ({ progress, range, targetScale, i, lhw }) => {
       className="flex items-center justify-center sticky top-20"
     >
       <motion.div
-        className="flex px-4 pt-8 md:px-14 md:pt-12 shadow-lg bg-white rounded-3xl flex-col relative -top[25%] origin-top border border-gray-200"
+        className="flex px-4 pt-7 md:px-14 md:pt-10 lg:pt-12 shadow-lg bg-white rounded-3xl flex-col relative -top[25%] origin-top border border-gray-200"
         style={{ scale, top: `calc(-5vh + ${i * 25}px)` }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 max-w-[1300px] mx-auto gap-10 2xl:pl-10">
@@ -34,13 +33,13 @@ const Card = ({ progress, range, targetScale, i, lhw }) => {
                 className={'text-center md:!text-left'}
                 text={lhw.title}
               />
-              <p className="text-neutral-text text-lg sm:text-xl font-medium text-center md:text-left xl:text-2xl xl:leading-10">
+              <p className="text-neutral-text text-lg sm:text-xl font-semibold text-center md:text-left xl:text-2xl xl:leading-10">
                 {lhw.description}
               </p>
 
               <div className="sm:flex justify-center md:justify-start md:pb-14 xl:pb-0">
                 <Button className={'py-4 w-full sm:w-48'}>
-                  <FaApple />
+                  <FaApple className="mb-0.5" />
                   <span>Download for iOS</span>
                 </Button>
               </div>

@@ -24,10 +24,10 @@ const StartMaking = () => {
               <div>
                 <Button
                   className={
-                    'py-4 w-full sm:w-52 bg-white !text-black hover:bg-black border hover:!text-white border-white font-semibold'
+                    'py-4 w-full sm:w-52 bg-white !text-black hover:bg-black border hover:!text-white border-white font-bold'
                   }
                 >
-                  <FaApple />
+                  <FaApple className="mb-0.5" />
                   <span>Download for iOS</span>
                 </Button>
               </div>
@@ -35,10 +35,10 @@ const StartMaking = () => {
           </AnimatedComponent>
         </div>
 
-        <div className="relative h-96 sm:h-[500px] xl:h-[700px] lg:h-600px">
+        <div className="relative h-96 sm:h-[500px] xl:h-[700px] lg:h-650px">
           <div className="absolute top-10 xl:-top-40 lg:-top-32 flex justify-center w-full">
             <AnimatedComponent variants={fadeInLeft}>
-              <div className="relative mx-auto w-64 sm:w-96 lg:w-[680px] aspect-[2/3.2]">
+              <div className="relative mx-auto w-64 sm:w-96 lg:w-[500px] xl:w-[680px] aspect-[2/3.2]">
                 <Image
                   loading="lazy"
                   src={'/images/2m.png'}

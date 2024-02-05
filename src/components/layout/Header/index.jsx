@@ -24,12 +24,12 @@ const Header = () => {
           href={'/'}
         >
           <Image
-            loading="lazy"
             className="object-contain"
             fill
             src={'/images/logo.png'}
             alt="logo"
             sizes="100%"
+            priority
           ></Image>
         </Link>
 
@@ -77,8 +77,8 @@ const Header = () => {
           </Link>
 
           <div className="sm:block hidden">
-            <Button className={'text-sm'}>
-              <FaApple />
+            <Button className={'text-sm '}>
+              <FaApple className="mb-0.5" />
               <span>Download for iOS</span>
             </Button>
           </div>

@@ -36,14 +36,14 @@ const DesignToFit = () => {
             >
               <HeadingText text={dtf.title} className={'!text-left'} />
 
-              <p className="text-neutral-text text-lg sm:text-xl font-medium xl:text-2xl xl:leading-10 mt-5 mb-12">
+              <p className="text-neutral-text text-lg sm:text-xl font-semibold xl:text-2xl xl:leading-10 mt-5 mb-12">
                 {dtf.description}
               </p>
 
               {i == 2 && (
                 <div className="md:absolute mb-10 md:mb-0 bottom-16">
                   <Button className={'py-4 w-full sm:w-64'}>
-                    <FaApple />
+                    <FaApple className="mb-0.5" />
                     <span>Download for iOS</span>
                   </Button>
                 </div>

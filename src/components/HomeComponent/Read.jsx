@@ -34,10 +34,10 @@ const Read = () => {
               </div>
             </AnimatedComponent>
             <AnimatedComponent variants={fadeInLeft}>
-              <div className="text-xl font-medium text-neutral-text my-5 md:my-8">
+              <div className="text-xl font-semibold text-neutral-text my-5 md:my-8">
                 {rd.date}
               </div>
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold lg:leading-snug group-hover:text-blue-500 transition-colors">
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold lg:leading-snug group-hover:text-blue-500 transition-colors">
                 {rd.heading}
               </h1>
             </AnimatedComponent>

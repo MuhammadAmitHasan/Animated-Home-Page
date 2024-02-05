@@ -40,7 +40,7 @@ const MobileMenu = ({ pageOpen, menuOpen, setPageOpen }) => {
             </AnimatePresence>
 
             <Button className={'!w-full mt-5 sm:hidden'}>
-              <FaApple />
+              <FaApple className="mb-0.5" />
               <span>Download for iOS</span>
             </Button>
           </div>

@@ -29,7 +29,7 @@ const FeatureSlide = () => {
                   />
                 </div>
                 <div
-                  className="text-xl sm:text-2xl md:text-3xl lg:text-5xl lg:leading-[65px] font-semibold text-center mt-5 mb-7"
+                  className="text-xl sm:text-2xl md:text-3xl lg:text-5xl lg:leading-[65px] font-bold text-center mt-5 mb-7"
                   dangerouslySetInnerHTML={{ __html: sdd.description }}
                 />
                 <div className="text-xl font-bold text-center">

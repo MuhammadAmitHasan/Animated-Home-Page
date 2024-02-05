@@ -40,12 +40,7 @@
 
 body {
   @apply bg-neutral;
-  /* @apply font-thicccboi; */
-  font-family: 'thicccboi', sans-serif;
-}
-
-.main {
-  position: relative;
+  @apply font-thicccboi;
 }
 
 .gradient-color {

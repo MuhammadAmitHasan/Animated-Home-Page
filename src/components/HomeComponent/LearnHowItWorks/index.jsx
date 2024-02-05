@@ -40,7 +40,7 @@ const LearnHowItWorks = () => {
           }
         />
 
-        <p className="text-lg md:text-xl lg:text-2xl text-center my-4 md:leading-9 lg:my-8 mx-auto max-w-3xl font-medium pb-5">
+        <p className="text-lg md:text-xl lg:text-2xl text-center my-4 md:leading-9 lg:my-8 mx-auto max-w-3xl font-semibold pb-5 md:pb-10">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu ut enim ad minim veniam quiscupidatat nonpol.
         </p>

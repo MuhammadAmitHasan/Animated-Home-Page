@@ -7,7 +7,7 @@ import AnimatedComponent from '../ui/AnimatedComponent';
 
 const WhyTechBot = () => {
   return (
-    <div className="container mx-auto px-3 max-w-[1424px]">
+    <div className="container mx-auto px-3 max-w-[1424px] font-semibold">
       <AnimatedComponent variants={fadeInUp}>
         <HeadingText
           text={
@@ -33,7 +33,7 @@ const WhyTechBot = () => {
               <div className="h-[30%] absolute top-auto bottom-[0%] left-[0%] right-[0%] bg-gradient-to-b from-transparent to-white via-transparent"></div>
             </div>
             <div className="text-center mt-4">
-              <h3 className="text-2xl md:text-3xl font-semibold my-4">
+              <h3 className="text-2xl md:text-3xl font-bold my-4">
                 Prompt library
               </h3>
               <p className="leading-8 text-lg">
@@ -47,7 +47,7 @@ const WhyTechBot = () => {
 
         <div className="py-10 text-center shadow-lg bg-white rounded-3xl">
           <AnimatedComponent variants={fadeInUp}>
-            <h3 className="text-2xl md:text-3xl font-semibold my-4">
+            <h3 className="text-2xl md:text-3xl font-bold my-4">
               100+ plugins
             </h3>
             <p className="leading-8 text-lg px-3">
@@ -74,8 +74,8 @@ const WhyTechBot = () => {
           }
         >
           <div>
-            <h1 className="text-7xl sm:text-[120px] font-semibold">GPT4</h1>
-            <h6 className="text-3xl font-semibold">Latest API model</h6>
+            <h1 className="text-7xl sm:text-[120px] font-bold">GPT4</h1>
+            <h6 className="text-3xl font-bold">Latest API model</h6>
           </div>
         </AnimatedComponent>
 
@@ -86,8 +86,8 @@ const WhyTechBot = () => {
           }
         >
           <div>
-            <h1 className="text-7xl sm:text-[120px] font-semibold">50K</h1>
-            <h6 className="text-3xl font-semibold">Token context</h6>
+            <h1 className="text-7xl sm:text-[120px] font-bold">50K</h1>
+            <h6 className="text-3xl font-bold">Token context</h6>
           </div>
         </AnimatedComponent>
 
@@ -103,7 +103,7 @@ const WhyTechBot = () => {
               />
             </div>
             <div className="text-center">
-              <h3 className="text-2xl md:text-3xl font-semibold my-4">
+              <h3 className="text-2xl md:text-3xl font-bold my-4">
                 Conversational history
               </h3>
               <p className="leading-8 text-lg">
@@ -120,7 +120,7 @@ const WhyTechBot = () => {
         className={'flex justify-center mt-5'}
       >
         <Button className={'py-4 w-full sm:w-64'}>
-          <FaApple />
+          <FaApple className="mb-0.5" />
           <span>Download for iOS</span>
         </Button>
       </AnimatedComponent>

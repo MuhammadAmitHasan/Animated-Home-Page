@@ -20,7 +20,7 @@ const Hero = () => {
       </AnimatedComponent>
 
       <AnimatedComponent variants={fadeInUp}>
-        <h1 className="text-center font-semibold text-4xl sm:text-5xl md:text-7xl lg:text-[90px] !lg:leading-[95px]">
+        <h1 className="text-center font-bold text-4xl sm:text-5xl md:text-7xl lg:text-[90px] !lg:leading-[95px]">
           Unlock the full potential <br />
           of <span className="gradient-color">conversational AI</span>
         </h1>
